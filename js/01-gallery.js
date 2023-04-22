@@ -14,8 +14,8 @@ const elements = galleryItems.map((option) => {
   const elementLinkImg = document.createElement("img");
   elementLinkImg.classList.add("gallery__image");
   elementLinkImg.src = option.preview;
+  elementLinkImg.src = option.original;
   elementLinkImg.alt = option.description;
-  elementLinkImg.dataset.source = "large-image.jpg";
 
   elementLink.append(elementLinkImg);
   elementList.append(elementLink);

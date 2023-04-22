@@ -19,4 +19,7 @@ function createGalleryCardMarkup(galleryItems) {
   return markup.join("");
 }
 
-var lightbox = new SimpleLightbox(".gallery a", {});
+var lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
